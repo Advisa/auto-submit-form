@@ -5,12 +5,14 @@ import logger                                    from 'redux-logger'
 
 // internal
 import reducers from '../reducers'
+import validator from '@redux/middlewares/validator'
 
 const configureStore = () => createStore(
   reducers,
   composeWithDevTools(
     applyMiddleware(
       logger,
+      validator,
     ),
   ),
 )

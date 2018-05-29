@@ -6,11 +6,11 @@
     homeCost: require('./home-cost'),
     mobilePhone: require('./mobile-phone'),
     numDependants: require('./num-dependants'),
-    personnummer: require('./personnummer'),
-    repaymentTime: require('./repayment-time'),
-    totalLoan: require('./total-loan'),
+    // personnummer: require('./personnummer'),
+    // repaymentTime: require('./repayment-time'),
+    // totalLoan: require('./total-loan'),
     income: require('./income'),
-    employedSince: require('./employed-since'),
-    employedTo: require('./employed-to')
+    // employedSince: require('./employed-since'),
+    // employedTo: require('./employed-to')
   };
 }).call(this);
