@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack-serve --r babel-preset-env --config ./config/webpack/webpack.config.babel.js"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "webpack": "^4.9.2",
+    "webpack-cli": "^2.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack-serve": "webpack-contrib/webpack-serve#9ef5b293a62f83920ab6d05d231d2c8d4f9e22a7"
+  }
+}
