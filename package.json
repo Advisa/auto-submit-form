@@ -1,20 +1,35 @@
 {
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-serve --r babel-preset-env --config ./config/webpack/webpack.config.babel.js"
+    "start": "./node_modules/.bin/webpack-dev-server --mode development --env.local --config ./config/webpack/webpack.config.babel.js --progress",
+    "build:dev": "./node_modules/.bin/webpack --mode development --config ./config/webpack/webpack.config.babel.js --progress"
   },
   "dependencies": {
     "babel-register": "^6.26.0",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.8.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "webpack": "^4.9.2",
     "webpack-cli": "^2.1.4"
   },
   "devDependencies": {
+    "autoprefixer": "^8.5.1",
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "webpack-serve": "webpack-contrib/webpack-serve#9ef5b293a62f83920ab6d05d231d2c8d4f9e22a7"
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-harddisk-plugin": "^0.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.2.0",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "resolve-url-loader": "^2.3.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack-dev-server": "^3.1.4"
   }
 }
