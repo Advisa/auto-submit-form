@@ -2,11 +2,13 @@
 import { combineReducers } from 'redux'
 
 // internal
-import ui from './ui'
+import ui         from './ui'
+import applicants from './applicants'
 
 
 const reducers = combineReducers({
-  ui
+  ui,
+  applicants
 })
 
 export default reducers

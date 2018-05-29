@@ -6,6 +6,7 @@ import InputBase from '@components/AutoSubmitForm/Fields/InputBase'
 
 class Email extends InputBase {
   render() {
+    const { applicant } = this.props
 
     // returns an Object
     const classes = this.getClasses()
@@ -14,7 +15,8 @@ class Email extends InputBase {
       <Input
         type="email"
         label="E-postadress"
-        className={classes}
+        className={ classes }
+        applicant={ applicant }
       />
     )
   }

@@ -9,7 +9,7 @@ class AutoSubmitForm extends React.Component {
       <form>
         {/* <Loan /> */}
         {/* <Applicant /> */}
-        <Applicant />
+        <Applicant applicant="primary" />
       </form>
     )
   }
