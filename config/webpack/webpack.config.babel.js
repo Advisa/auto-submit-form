@@ -20,8 +20,8 @@ export default {
   devtool: 'cheap-module-source-map',
   entry: [
     'babel-polyfill',
-    // '[CHANGE_ENTRYPOINT_OF_YOUR_APP_HERE]',
     './src/js/app.jsx',
+    // './src/js/app_w_redux.jsx', // if you want to use Redux
   ],
   output: {
     path: path.resolve( './dist' ),
