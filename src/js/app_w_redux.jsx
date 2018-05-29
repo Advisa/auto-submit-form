@@ -8,9 +8,11 @@ import { Provider } from 'react-redux'
 // internal
 import store from '@redux/store'
 
+import AutoSubmitForm from './components/AutoSubmitForm/AutoSubmitForm'
+
 class App extends React.Component {
   render() {
-    return <div>nihao</div>
+    return <AutoSubmitForm />
   }
 }
 

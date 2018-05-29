@@ -20,8 +20,8 @@ export default {
   devtool: 'cheap-module-source-map',
   entry: [
     'babel-polyfill',
-    './src/js/app.jsx',
-    // './src/js/app_w_redux.jsx', // if you want to use Redux
+    // './src/js/app.jsx',
+    './src/js/app_w_redux.jsx', // if you want to use Redux
   ],
   output: {
     path: path.resolve( './dist' ),
@@ -41,9 +41,10 @@ export default {
   resolve : {
     modules : [ 'node_modules' ],
     alias   : {
-      scss     : path.resolve( './src/scss' ),
-      '@src'   : path.resolve( './src' ),
-      '@redux' : path.resolve( './src/js/redux' ),
+      scss          : path.resolve( './src/scss' ),
+      '@components' : path.resolve( './src/js/components' ),
+      '@src'        : path.resolve( './src' ),
+      '@redux'      : path.resolve( './src/js/redux' ),
     },
     extensions : [ '.js', '.jsx' ],
   },

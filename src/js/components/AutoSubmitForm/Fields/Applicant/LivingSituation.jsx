@@ -1,0 +1,4 @@
+
+        <CivilStatus />
+        <HomeType />
+        <HomeMontlyCost />
